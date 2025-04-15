@@ -20,17 +20,25 @@
             where intuitive tools help you manage expenses, set goals, and achieve financial success.
           </p>
           <div class="mt-4">
-            <a href="signin.html" class="btn me-3 px-4 py-2">Sign In</a>
-            <a href="signup.html" class="btn px-4 py-2">Sign Up</a>
+            <a href="signin.html" class="btn btn-success btn-lg mt-4 me-3">Sign In</a>
+            <a href="signup.html" class="btn btn-success btn-lg mt-4">Sign Up</a>
           </div>
         </div>
 
         <div class="col-md-6 text-center">
-          <img src="../img/Budgeting-Graphic.png" alt="Budget" class="img-fluid rounded">
+          <img src="../img/Budgeting-Graphic.png" alt="Budget" class="img-fluid rounded big-img">
         </div>
       </div>
     </div>
   </section>
+  <script>
+    const url = new URL(window.location);
+    if (url.searchParams.get("logged_out")) {
+      alert("You’ve been logged out successfully.");
+      url.searchParams.delete("logged_out");
+      window.history.replaceState({}, document.title, url.pathname);
+    }
+  </script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
