@@ -18,6 +18,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $_SESSION['user_id'] = $user['user_id'];
         $_SESSION['username'] = $user['username'];
 
+
+
         //Redirect to home page
         header("Location: http://localhost/4560-Final/front_end/home.html");
         exit;

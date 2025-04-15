@@ -21,7 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $stmt = $pdo->prepare("INSERT INTO USERS (email, username, password) VALUES (?, ?, ?)");
         $stmt->execute([$email, $username, $hashedPassword]);
 
-        header("Location: ../front_end/signin.html");
+        header("Location: http://localhost/4560-Final/front_end/home.html");
         exit;
     } catch (PDOException $e) {
         if ($e->getCode() == 23000) {
