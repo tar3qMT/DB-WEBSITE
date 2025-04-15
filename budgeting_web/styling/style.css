@@ -167,3 +167,13 @@
     background-color: #dc3545; /* Bootstrap danger red */
     border-color: #dc3545;
   }
+
+  .btn-outline-success {
+    border-radius: 12px;
+    font-weight: 500;
+  }
+
+  .btn-outline-success:hover {
+    background-color: #28a745;
+    color: white;
+  }
