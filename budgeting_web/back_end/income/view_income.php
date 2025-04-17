@@ -23,6 +23,7 @@ $incomes = $stmt->fetchAll();
     <title>Your Income</title>
     <!-- ✅ Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../styling/style.css">
 </head>
 
 <body>
@@ -57,7 +58,7 @@ $incomes = $stmt->fetchAll();
 
         <!-- Back to Home Button -->
         <div class="mt-4 text-center">
-            <a href="../../front_end/home.html" class="btn btn-outline-secondary btn-lg">← Back to Home</a>
+            <a href="../../front_end/home.html" class="btn btn-success btn-lg mt-4">← Back to Home</a>
         </div>
 
         <!-- Bootstrap JS -->
