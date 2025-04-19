@@ -21,7 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 
         //Redirect to home page
-        header("Location: http://localhost/4560-Final/front_end/home.html");
+        header("Location: ../../front_end/home.html");
         exit;
     } else {
         die("Invalid email or password.");
